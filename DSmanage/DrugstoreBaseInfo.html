@@ -1,0 +1,53 @@
+<script type="text/javascript" src="Js/baseinfomodify.js"></script>
+<style type="text/css">
+    .title{
+        font-family: '微软雅黑';
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .baseinfo{
+        border: 3px solid gainsboro;
+        border-radius: 10px;
+        height: 360px;
+    }
+</style>
+<div style="height: 80px"></div>
+<div class="baseinfo">
+    <p class="title">基本信息修改</p>
+        <table class="table" align="center" style="width: 600px">
+            <tr>
+                <td width="100px"><label>联系人：</label></td>
+                <td colspan="3" width="500px"><input id="contactname" type="text"/></td>
+            </tr>
+            <tr>
+                <td><label>联系电话：</label></td>
+                <td colspan="3"><input id="phone" type="text" width="400px"/></td>
+            </tr>
+            <tr>
+                <td><label>移动电话：</label></td>
+                <td colspan="3"><input id="mobilephone" type="text" width="400px"/></td>
+            </tr>
+            <tr>
+                <td><label>缩写名：</label></td>
+                <td colspan="3"><input id="drugstoreshow" type="text" width="400px"/></td>
+            </tr>
+            <tr>
+                <td><label>邮箱：</label></td>
+                <td colspan="3"><input id="email" type="text" width="400px"/></td>
+            </tr>
+            <tr>
+                <td><label>营业时间：</label></td>
+                <td width="200px"><input id="starthour" type="text" width="400px"/></td>
+                <td width="50px"><label>到</label></td>
+                <td><input id="endhour" type="text" width="400px"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td ><button  id="submit" class="btn">提交</button></td>
+                <td></td>
+                <td ><button id="reset" class="btn">重置</button></td>
+            </tr>
+        </table>
+</div>
+<div id="error"></div>
+

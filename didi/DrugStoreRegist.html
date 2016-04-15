@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/non-responsive.min.css"/>
+    <link rel="stylesheet" href="css/DSregist.css"/>
+    <link rel="stylesheet" href="css/uploadify.css"/>
+    <script src="Js/jquery-1.11.3.min.js"></script>
+    <script src="Js/jquery.uploadify.js"></script>
+    <script src="Js/DSregist.js"></script>
+</head>
+<body>
+<div style="height: 30px"></div>
+<div class="container" align="center">
+    <div class="row">
+        <div class="col-xs-3">
+            <img src="img/didilogo.jpg" alt="嘀嘀送药"/>
+        </div>
+        <div class="col-xs-9">
+            <ul class="nav nav-tabs">
+                <li>
+                    <a href="didiindex.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="#">药店加盟</a>
+                </li>
+                <li>
+                    <a href="CommonQuestion.html">常见问题</a>
+                </li>
+                <li>
+                    <a href="ConnectUS.html">联系我们</a>
+                </li><br />
+            </ul>
+        </div>
+    </div>
+
+    <div class="row" align="center">
+        <div class="backimg " style="background:url(img/DSnum.jpg) no-repeat 0 0;" align="center">
+            <div class="numofds"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="joinus col-xs-3 col-xs-offset-1" align="center">加入我们</div>
+        <div class="rule col-xs-6" align="">"*"为必填项&nbsp;&nbsp;&nbsp;图片大小限制为1M，格式限制为jpg</div>
+    </div>
+    
+    <div class="row" align="center" style="margin-top: 20px">
+        <div class="form-horizontal" style="width: 700px">
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">用户名：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="LoginName" class="form-control" placeholder="药店登陆用户名"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">密码：</label>
+                <div class="col-xs-8">
+                    <input type="password" id="DrugStorePassword1" class="form-control" placeholder="药店登陆密码"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">确认密码：</label>
+                <div class="col-xs-8">
+                    <input type="password" id="DrugStorePassword2" class="form-control" placeholder="再次输入密码"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">密码找回问题：</label>
+                <div class="col-xs-8">
+                    <select id="PasswordQuestion" class="form-control">
+                        <option value="您小学的校名？">您小学的校名？</option>
+                        <option value="您第一个宠物的名字？">您第一个宠物的名字？</option>
+                        <option value="您最喜欢的明星？">您最喜欢的明星？</option>
+                        <option value="您最喜欢的汽车品牌？">您最喜欢的汽车品牌？</option>
+                        <option value="您最喜欢的食物名称？">您最喜欢的食物名称？</option>
+                        <option value="您最喜欢的运动？">您最喜欢的运动？</option>
+                        <option value="您最喜欢的城市？">您最喜欢的城市？</option>
+                    </select>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">答案：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="PasswordAnswer" class="form-control"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">药店名：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="DrugStoreName" class="form-control" placeholder="药店对外显示名称"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">缩写名：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="DrugStoreShow" class="form-control"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">联系人姓名：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="ContactName" class="form-control" placeholder="药店负责联系人姓名"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">联系电话：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="Phone" class="form-control" placeholder="药店联系电话"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">移动电话：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="MobilePhone" class="form-control" placeholder="药店联系移动电话"/>
+                </div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">E-mail：</label>
+                <div class="col-xs-8">
+                    <input type="email" id="Email" class="form-control"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">地址：</label>
+                <div class="col-xs-5" >
+                    <input type="text" id="address1" class="form-control" placeholder="输入全称，如（北京市）" />
+                </div>
+                <div class="col-xs-2" align="left">省/市*</div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2 control-label"></label>
+                <div class="col-xs-5" >
+                    <input type="text" id="address2" class="form-control" placeholder="如（朝阳区）"/>
+                </div>
+                <div class="star col-xs-1">区*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label"></label>
+                <div class="col-xs-7">
+                    <input type="text" id="address3" class="form-control" placeholder="如(大北窑）"/>
+                </div>
+                <div class="star col-xs-2" align="left">大街*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label"></label>
+                <div class="col-xs-3">
+                    <input type="text" id="address4" class="form-control"  placeholder="具体门牌号"/>
+                </div>
+                <div class="star col-xs-1" align="left">号*</div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2 control-label"></label>
+                <div class="col-xs-9">
+                    <input type="text" id="address5" class="form-control" placeholder="输入具体地址"/>
+                </div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">邮编：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="ZipCode" class="form-control"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">营业时间：</label>
+                <div class="col-xs-3" >
+                    <input type="text" id="StartHour" class="form-control" width="100px" placeholder="起始时间"/>
+                </div>
+                <div class="star col-xs-1">至</div>
+                <div class="col-xs-3">
+                    <input type="text" id="EndHour" class="form-control" placeholder="结束时间"/>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">夜间送药：</label>
+                <div class="col-xs-1" style="padding-top: 10px">
+                    <select id="nightsend">
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">战略伙伴：</label>
+                <div class="col-xs-1" style="padding-top: 10px">
+                    <select id="StrategicPartner">
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </div>
+                <div class="star col-xs-1">*</div>
+            </div>
+
+            <div class="form-group">
+                 <label class="col-xs-2 control-label">合作年限：</label>
+                <div class="col-xs-8">
+                    <input type="text" id="CooperTime" class="form-control"/>
+                </div>
+                <div class="star col-xs-1">年*</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《营业执照副本》：</label></div>
+        <div class="col-xs-2" align="left"><input type="file" id="BusinessLicense" class="cimg"/></div>
+        <div class="col-xs-4" id="BusinessLicenseq" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《税务登记副本》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="TaxRegistration" class="cimg"/></div >
+        <div class="col-xs-4" id="TaxRegistrationq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left" style="padding-left: 0"><label>《药品经营许可证》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="DrugLicense" class="cimg"/></div >
+        <div class="col-xs-4" id="DrugLicenseq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《组织机构代码》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="OrganizationCode" class="cimg"/></div >
+        <div class="col-xs-4" id="OrganizationCodeq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《gsp认证》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="GspCertification" class="cimg"/></div >
+        <div class="col-xs-4" id="GspCertificationq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《器械经营许可》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="EquipmentLicense" class="cimg"/></div >
+        <div class="col-xs-4" id="EquipmentLicenseq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《食品卫生许可》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="FoodHygieneLicense" class="cimg"/></div >
+        <div class="col-xs-4" id="FoodHygieneLicenseq"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-2" algin="left"><label>《药师注册证》：</label></div >
+        <div class="col-xs-2" align="left"><input type="file" id="PharmacistCard" class="cimg"/></div >
+        <div class="col-xs-4" id="PharmacistCardq"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-5" style="margin-top: 30px">
+            <button id="submit">提交申请</button>
+        </div>
+    </div>
+
+    <div style="height: 50px"></div>
+
+
+
+
+
+
+
+
+    <div class="row" align="center" style="width: 1000px">
+        <iframe src="friendlink.html" frameborder="0" width="1000px" height="50px"></iframe>
+    </div>
+    <div style="background: #00c358;height: 100px;font-size: 20px;padding-top:45px;padding-bottom:0px;" align="center">
+        <p>Copyright © 2015  京ICP备14053162号-1  北京医药贷网财务咨询有限公司 </p>
+    </div>
+</div>
+
+</body>
+</html>

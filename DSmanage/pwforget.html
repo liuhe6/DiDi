@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="Js/jquery-1.11.3.min.js"></script>
+    <script src="Js/pwforget.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="CSS/non-responsive.min.css"/>
+    <link rel="stylesheet" href="CSS/pwforget.css"/>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 col-xs-offset-2" id="divid">
+            <p>请输入用户名：</p>
+            <input type="text" id="LoginName"/><br/>
+            <div style="height: 10px"></div>
+            <input type="button" id="namesubmit" class="btn" value="确定"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3 col-xs-offset-2" id="divquestion">
+            <p>您的密码提示问题是：</p>
+            <p id="question"></p>
+            <input type="text" id="answer"/><br/>
+            <div style="height: 10px"></div>
+            <input type="button" id="answersubmit" class="btn" value="确定"/>
+        </div>
+    </div>
+    <div style="height: 30px"></div>
+    <div class="row">
+        <div class="col-xs-3 col-xs-offset-2" id="divreset">
+            <p>请输入新的密码：</p>
+            <span> <input type="password" id="newpw1" /></span><br>
+            <p>请再次输入新的密码：</p>
+            <span> <input type="password" id="newpw2" /></span><br>
+            <div style="height: 10px"></div>
+            <input type="button" id="pwsubmit" class="btn" value="确定"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

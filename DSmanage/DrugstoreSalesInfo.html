@@ -1,0 +1,44 @@
+<script type="text/javascript" src="Js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="Js/jquery.uploadify.min.js"></script>
+<script type="text/javascript" src="Js/salesinfo.js"></script>
+<link rel="stylesheet" href="CSS/uploadify.css"/>
+<style type="text/css">
+    .salesinfo{
+        border: 3px solid gainsboro;
+        border-radius: 10px;
+        height: 530px;
+        font-family: '微软雅黑';
+        font-size: 16px;
+        margin-top: 40px;
+    }
+</style>
+<div class="salesinfo" >
+    <p class="title">促销信息发布</p>
+    <table class="table" width="600px">
+            <tr>
+                <td width="150px"><label>促销标题：</label></td>
+                <td colspan="3"><input id="markettitle" type="text" size="60"/></td>
+            </tr>
+            <tr>
+                <td><label>促销开始时间：</label></td>
+                <td><input type="date" id="startdate"/></td>
+                <td><label>促销结束时间：</label></td>
+                <td><input type="date" id="enddate"/></td>
+            </tr>
+            <tr>
+                <td><label>促销说明：</label></td>
+                <td colspan="3"><textarea name="marketinfo" id="marketinfo" cols="60" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>上传图片：</label></td>
+                <td><input type="file" id="salesimg"/></td>
+                <td colspan="2"><div id="queue"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="submit" class="btn">提交</button></td>
+                <td></td>
+                <td><button id="reset" class="btn">重置</button></td>
+            </tr>
+        </table>
+</div>

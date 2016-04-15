@@ -1,0 +1,37 @@
+ <script type="text/javascript" src="Js/jquery-1.11.3.min.js"></script>
+ <script type="text/javascript"></script>
+<button id="dschat">进入药店聊天室</button>
+ <div id="chatlist" ></div>
+ <script>
+     $(function(){
+         getchatroom();
+
+     });
+     function getchatroom(){
+         $.ajax({
+             type: "post",
+             url: "model/getchatroom.php",
+             dataType:'json',
+             success: function (msg) {
+                if(msg.cnum==0){
+                    $("#chatlist").append("没有相关聊天室");
+                }
+                 else{
+                    var html='<table class="table"><tr> <td>聊天室ID</td><td>聊天室名称</td></tr>';
+                    var list=msg.list;
+                    $.each(list, function (i, n) {
+                       html+='<tr><td>'+n['ChatRoomID']+'</td><td>'+n['ChatRoomName']+'</td><td><button class="enterroom" cid="'+n['ChatRoomID']+'">进入</button></td></tr>';
+                    });
+                    html+='</table>';
+
+                    $("#chatlist").append(html);
+                    $(".enterroom").click(function(){
+                        var cid = $(this).attr('cid');
+                        window.location.href="ChatRoom.php?roomid="+cid;
+                    });
+
+                }
+             }
+         });
+     }
+ </script>

@@ -1,0 +1,42 @@
+.header{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight:300;
+    font-family: '微软雅黑';
+    height: 200px;
+
+
+}
+.body{
+    background-color: #c4e3f3;
+    border-radius: 15px;
+    height: 300px;
+    width: 50%;
+    margin: auto;
+
+}
+.img{
+    margin: auto;
+    width: 40%;
+    float: left;
+    padding-top: 90px;
+    padding-left:40px;
+}
+.loginwindow{
+    padding-top: 30px;
+    margin:20px;
+    float: right;
+    width: 50%;
+    height: 250px;
+
+    font-size: 15px;
+    font-family: '微软雅黑';
+}
+
+.input{
+
+    border-radius: 5px;
+
+}
+

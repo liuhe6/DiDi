@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../Js/jquery-1.11.3.min.js"></script>
+</head>
+
+<script type="text/javascript">
+    $(function(){
+        if(document.all){
+            $("#audio1").html("<embed src='audio2015-7-9-16-52-26.wma' autostart=false controls='smallconsole'>");
+        }else{
+            $("#audio1").html("<audio src='audio2015-7-9-16-52-26.wma' controls='controls'></audio>");
+        }
+    });
+</script>
+
+
+<body>
+<div id="audio1"> </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+.row{
+    width: 1000px;
+}
+.nav li{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight: 300;
+    color: #000000;
+}
+
+.backimg{
+    height:300px;
+    width:1000px;
+    margin-left: 100px;
+
+}
+.numofds{
+    color:darkgreen;
+    padding-top: 30px;
+    padding-right: 150px;
+    font-family: "微软雅黑";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.joinus{
+    color:green;
+    font-family: "微软雅黑";
+    font-size: 35px;
+    font-weight: 700;
+}
+.rule{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 20px;
+    color: red;
+}
+
+table tr td{text-align:left; }
+
+
+
+.control-label{
+    text-align: right;
+    width: 180px;
+    font-size: 18px;
+}
+
+.star{
+    padding-top: 6px;
+    font-size: 15px;
+}
+#submit{
+    width: 110px;
+    height: 60px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    font-weight: 300;
+    border: 3px solid darkgray;
+    padding-right: 10px;
+    border-radius:20px ;
+}

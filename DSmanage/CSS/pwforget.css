@@ -1,0 +1,40 @@
+#divquestion{
+    border-radius: 20px;
+    border: 2px solid #bbbcb7;
+    height: 200px;
+    padding-top: 30px;
+    width: 300px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    display: none;
+}
+#divreset{
+    display: none;
+    border-radius: 20px;
+    border: 2px solid #bbbcb7;
+    height: 240px;
+    padding-top: 30px;
+    width: 300px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+
+}
+#answersubmit{
+    margin-left: 100px;
+}
+#pwsubmit{
+    margin-left:100px;
+}
+#divid{
+    border-radius: 20px;
+    border: 2px solid #bbbcb7;
+    height: auto;
+    padding-top: 30px;
+    width: 300px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+}
+
+#namesubmit{
+    margin-left: 100px;
+}

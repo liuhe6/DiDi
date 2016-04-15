@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="Js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="CSS/non-responsive.min.css"/>
+    <script>
+        $(function(){
+            getquestion();
+            $("#answersubmit").click(function(){
+                if ($("#answer").val()!=""){
+                    checkansewer();
+                }
+                else{
+                    alert("请输入答案");
+                }
+            });
+
+            $("#pwsubmit").click(function(){
+                if(pwcheck()){
+                    pwset();
+                }
+            });
+
+        });
+        function getquestion() {
+            $.ajax({
+                type: "POST",
+                url: "model/getquestion.php",
+                success: function (data) {
+                    if(data==2){
+                        alert('您好，该账号已在其他设备登陆');
+                        window.location='Drugstorelogin.php';
+                    }
+                    else{
+                    $("#question").html(data);
+                    }
+                }
+            });
+        }
+
+        function checkansewer() {
+            $.ajax({
+                type: "POST",
+                url: "model/checkanswer.php",
+                data: "answer=" + $("#answer").val(),
+                success: function (data) {
+                    if (data == 1) {
+                        alert("正确，请输入两次新密码");
+                        $("#divreset").css("display", "inline");
+                    }
+                    else {
+                        alert("答案错误");
+                    }
+                }
+            });
+        }
+        function pwcheck(){
+            if ($("#newpw1").val()=="" || $("#newpw2").val()==""){
+                alert("请输入两次密码");
+                return false;
+            }
+            else{
+                if($("#newpw1").val()!=$("#newpw2").val()){
+                    alert("两次输入不一样，请重新输入");
+                    return false;
+                }
+                else{
+                    if($("#newpw2").val().length<8){
+                        alert("密码长度至少为8位");
+                        return false;
+                    }
+                    else{
+                    return true;
+                    }
+                }
+            }
+        }
+
+        function pwset(){
+            $.ajax({
+                type: "POST",
+                url: "model/pwset.php",
+                data: "newpw=" + $("#newpw2").val(),
+                success: function (data) {
+                    if(data==1){
+                        alert("修改成功");
+                    }
+                    else{
+                        alert("修改失败");
+                    }
+                }
+            });
+        }
+    </script>
+    <style>
+        #divquestion{
+            border-radius: 20px;
+            border: 2px solid #bbbcb7;
+            height: 200px;
+            padding-top: 30px;
+            width: 300px;
+            font-family: 微软雅黑;
+            font-size: 20px;
+        }
+        #divreset{
+            display: none;
+            border-radius: 20px;
+            border: 2px solid #bbbcb7;
+            height: 240px;
+            padding-top: 30px;
+            width: 300px;
+            font-family: 微软雅黑;
+            font-size: 20px;
+
+        }
+        #answersubmit{
+            margin-left: 100px;
+        }
+        #pwsubmit{
+            margin-left:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-2" id="divquestion">
+        <p>您的密码提示问题是：</p>
+        <p id="question"></p>
+        <input type="text" id="answer"/><br/>
+          <div style="height: 10px"></div>
+        <input type="button" id="answersubmit" class="btn" value="确定"/>
+     </div>
+    </div>
+    <div style="height: 30px"></div>
+    <div class="row">
+        <div class="col-xs-3 col-xs-offset-2" id="divreset">
+            <p>请输入新的密码：</p>
+            <span> <input type="password" id="newpw1" /></span><br>
+            <p>请再次输入新的密码：</p>
+            <span> <input type="password" id="newpw2" /></span><br>
+            <div style="height: 10px"></div>
+            <input type="button" id="pwsubmit" class="btn" value="确定"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

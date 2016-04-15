@@ -1,0 +1,26 @@
+
+.row{
+    width: 1000px;
+}
+.nav li{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight: 300;
+    color: #000000;
+}
+.address{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight: 300;
+}
+
+.service{
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+
+.detail{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #808080;
+}

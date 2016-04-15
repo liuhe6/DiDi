@@ -1,0 +1,93 @@
+<script type="text/javascript" src="Js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="Js/jquery.uploadify.min.js"></script>
+<script type="text/javascript" src="Js/criticalinfomodify.js"></script>
+<link rel="stylesheet" href="CSS/uploadify.css"/>
+<style type="text/css">
+    .criticalinfo{
+        border: 3px solid gainsboro;
+        border-radius: 10px;
+        height: 870px;
+        font-family: '微软雅黑';
+        font-size: 15px;
+    }
+    #imglimit{
+        font-family: '微软雅黑';
+        font-size: 15px;
+        font-weight: 300;
+    }
+</style>
+<div class="criticalinfo">
+    <p class="title">重要信息修改</p>
+    <table  class="table" width="600px" >
+        <tr >
+            <td width="170px"><label >药店名称:</label></td>
+            <td colspan="2"><input type="text" id="drugstorename" size="50" /></td>
+        </tr>
+        <tr>
+            <td><label>地址：</label></td>
+            <td colspan="2"><input type="text" id="drugstoreaddress" size="50"/></td>
+        </tr>
+        <tr>
+            <td><label>邮编：</label></td>
+            <td colspan="2"><input type="text" id="zipcode"/></td>
+        </tr>
+        <tr>
+            <td><label >是否提供夜间送药：</label></td>
+            <td colspan="2"><select id="nightsend">
+                <option value="TRUE">是</option>
+                <option value="FALSE">否</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>合作年限：</label></td>
+            <td colspan="2"><input type="text" id="company"/></td>
+        </tr>
+        <tr>
+            <td colspan="3"><p id="imglimit">图片最大1M，支持jpg、jpeg、png格式</p></td>
+        </tr>
+        <tr>
+            <td><label>《营业执照副本》：</label></td>
+            <td width="100px"><input type="file" id="BusinessLicense" class="cimg"/></td>
+            <td><div id="BusinessLicenseq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《税务登记副本》：</label></td>
+            <td><input type="file" id="TaxRegistration" class="cimg"/></td>
+            <td><div id="TaxRegistrationq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《药品经营许可证》：</label></td>
+            <td><input type="file" id="DrugLicense" class="cimg"/></td>
+            <td><div id="DrugLicenseq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《组织机构代码》：</label></td>
+            <td><input type="file" id="OrganizationCode" class="cimg"/></td>
+            <td><div id="OrganizationCodeq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《gsp认证》：</label></td>
+            <td><input type="file" id="GspCertification" class="cimg"/></td>
+            <td><div id="GspCertificationq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《器械经营许可》：</label></td>
+            <td><input type="file" id="EquipmentLicense" class="cimg"/></td>
+            <td><div id="EquipmentLicenseq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《食品卫生许可》：</label></td>
+            <td><input type="file" id="FoodHygieneLicense" class="cimg"/></td>
+            <td><div id="FoodHygieneLicenseq"></div></td>
+        </tr>
+        <tr>
+            <td><label>《药师注册证》：</label></td>
+            <td><input type="file" id="PharmacistCard" class="cimg"/></td>
+            <td><div id="PharmacistCardq"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><input type="button" id="submit" value="提交" class="btn"/></td>
+        </tr>
+    </table>
+</div>
+

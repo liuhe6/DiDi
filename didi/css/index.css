@@ -1,0 +1,112 @@
+
+.row{
+    width: 1000px;
+}
+.nav li{
+    font-size: 20px;
+    font-family: "微软雅黑";
+    font-weight: 300;
+    color: #000000;
+}
+#owl-demo .item{
+    display: block;
+    padding: 30px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-buttons div {
+    padding: 5px 9px;
+}
+
+.owl-theme .owl-buttons i{
+    margin-top: 2px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: -45px;
+    top: 150px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+    right: -45px;
+    top: 150px;
+}
+.pink{
+    background-color: pink;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 微软雅黑;
+}
+
+.green{
+    background-color: greenyellow;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 微软雅黑;
+}
+
+.blue{
+    background-color: aqua;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 微软雅黑;
+}
+
+.purple{
+    background-color: mediumpurple;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 微软雅黑;
+}
+.feature{
+    padding-top: 20px;
+}
+
+.title{
+    font-family: 微软雅黑;
+    font-size: 35px;
+    font-weight: 500;
+    color: #00afef;
+}
+
+.featuredetail{
+    font-family: 微软雅黑;
+    font-size: 18px;
+    font-weight: 200;
+    color: #000000;
+    text-align:left;
+}
+
+.aboutus{
+    width: 800px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 微软雅黑;
+    text-align:left;
+    line-height:180%;
+
+}
